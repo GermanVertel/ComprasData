@@ -12,6 +12,7 @@
 		0618FCAF2C2CD5BA00B63B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0618FCAE2C2CD5BA00B63B3F /* Assets.xcassets */; };
 		0618FCB22C2CD5BA00B63B3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0618FCB12C2CD5BA00B63B3F /* Preview Assets.xcassets */; };
 		0618FCB92C2CD6DA00B63B3F /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0618FCB82C2CD6DA00B63B3F /* ListModel.swift */; };
+		0618FCBC2C2CD9DE00B63B3F /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0618FCBB2C2CD9DD00B63B3F /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		0618FCAE2C2CD5BA00B63B3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0618FCB12C2CD5BA00B63B3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0618FCB82C2CD6DA00B63B3F /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		0618FCBB2C2CD9DD00B63B3F /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		0618FCA92C2CD5B800B63B3F /* ComprasData */ = {
 			isa = PBXGroup;
 			children = (
+				0618FCBA2C2CD9B400B63B3F /* Vistas */,
 				0618FCAA2C2CD5B800B63B3F /* ComprasDataApp.swift */,
 				0618FCAC2C2CD5B800B63B3F /* ContentView.swift */,
 				0618FCB82C2CD6DA00B63B3F /* ListModel.swift */,
@@ -68,6 +71,14 @@
 				0618FCB12C2CD5BA00B63B3F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0618FCBA2C2CD9B400B63B3F /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				0618FCBB2C2CD9DD00B63B3F /* AddView.swift */,
+			);
+			path = Vistas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0618FCBC2C2CD9DE00B63B3F /* AddView.swift in Sources */,
 				0618FCB92C2CD6DA00B63B3F /* ListModel.swift in Sources */,
 				0618FCAD2C2CD5B800B63B3F /* ContentView.swift in Sources */,
 				0618FCAB2C2CD5B800B63B3F /* ComprasDataApp.swift in Sources */,

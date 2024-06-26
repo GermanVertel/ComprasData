@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct AddView: View {
+    
+    @State private var item = ListModel()
+    @Environment(\.modelContext) var context
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List{
+            TextField("Titulo", text: $item.titulo)
+            TextField("Presupuesto", text: $item.presupuesto)
+                .keyboardType(.numberPad)
+            DatePicker("Fecha", selection: $item.fecha)
+            Button{
+                withAnimation{
+                    context.insert(item)
+                }
+            } label: {
+                Text("guardar")
+            }.navigationTitle("Crear compra")
+
+        }
     }
 }
 
-#Preview {
-    AddView()
-}
